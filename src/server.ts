@@ -29,4 +29,8 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction)=>{
     })
 })
 
-app.listen(3333, ()=> console.log('Servidor Online!!'))
+
+
+const port = process.env.PORT;
+
+app.listen(port, ()=> console.log('Servidor Online!!'))
